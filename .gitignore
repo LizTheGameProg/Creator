@@ -1,0 +1,11 @@
+
+*.db
+*.filters
+*.suo
+*.db-shm
+*.db-wal
+*.vcxproj
+*.ipch
+*.user
+*.stamp
+generated/
