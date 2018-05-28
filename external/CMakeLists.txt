@@ -1,0 +1,7 @@
+target_include_directories(Creator PUBLIC "glm/include/")
+target_include_directories(Creator PUBLIC "SDL2/include/")
+target_include_directories(Creator PUBLIC "GLFW3/include/")
+target_include_directories(Creator PUBLIC "glew/include/")
+target_include_directories(Creator PUBLIC "openGL/include/")
+target_include_directories(Creator PUBLIC "soil/include/")
+target_include_directories(Creator PUBLIC "stb/")

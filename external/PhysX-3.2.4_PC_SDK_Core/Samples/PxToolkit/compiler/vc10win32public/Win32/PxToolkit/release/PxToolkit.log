@@ -1,0 +1,23 @@
+﻿Build started 8/06/2014 8:54:48 PM.
+     1>Project "C:\Perforce\elizabeth.rowlands_3519\2014_Cohort\2nd_Year\Students\elizabeth.rowlands\User\Game Physics Application\3rdParty\PhysX-3.2.4_PC_SDK_Core\Samples\PxToolkit\compiler\vc10win32public\PxToolkit.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I./../../../../Include/foundation /I./../../../../Source/foundation/include /I./../../../../Include/physxprofilesdk /I./../../../../Include/physxvisualdebuggersdk /I./../../include /I./../../../../Include/common /I./../../../../Include/geometry /I./../../../../Include/pvd /I./../../../../Include/particles /I./../../../../Include/cooking /I./../../../../Include/extensions /I./../../../../Include/characterdynamic /I./../../../../Include/vehicle /I./../../../../Include/RepX /I./../../../../Include/RepXUpgrader /I./../../../../Include /I./../../../../Source/GeomUtils/headers /Zi /nologo /W3 /WX /Ox /Oy- /D WIN32 /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_MSC_VER_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D NDEBUG /D _SECURE_SCL=0 /D _MBCS /GF /Gm- /MT /GS- /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /GR- /Fo"./Win32/PxToolkit/release\\" /Fd"./Win32/PxToolkit/release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /MP /Ox ..\..\src\PxTkBmpLoader.cpp ..\..\src\PxTkFPS.cpp ..\..\src\PxTkMatrixUtils.cpp ..\..\src\PxTkRandom.cpp ..\..\src\PxTkRepX.cpp ..\..\src\PxTkStream.cpp
+         PxTkBmpLoader.cpp
+         PxTkFPS.cpp
+         PxTkMatrixUtils.cpp
+         PxTkRandom.cpp
+         PxTkRepX.cpp
+         PxTkStream.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"./../../lib/win32\PxToolkit.lib" /NOLOGO /MACHINE:X86 ./Win32/PxToolkit/release\PxTkBmpLoader.obj
+         ./Win32/PxToolkit/release\PxTkFPS.obj
+         ./Win32/PxToolkit/release\PxTkMatrixUtils.obj
+         ./Win32/PxToolkit/release\PxTkRandom.obj
+         ./Win32/PxToolkit/release\PxTkRepX.obj
+         ./Win32/PxToolkit/release\PxTkStream.obj
+         PxToolkit.vcxproj -> C:\Perforce\elizabeth.rowlands_3519\2014_Cohort\2nd_Year\Students\elizabeth.rowlands\User\Game Physics Application\3rdParty\PhysX-3.2.4_PC_SDK_Core\Samples\PxToolkit\compiler\vc10win32public\./../../lib/win32\PxToolkit.lib
+     1>Done Building Project "C:\Perforce\elizabeth.rowlands_3519\2014_Cohort\2nd_Year\Students\elizabeth.rowlands\User\Game Physics Application\3rdParty\PhysX-3.2.4_PC_SDK_Core\Samples\PxToolkit\compiler\vc10win32public\PxToolkit.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.86

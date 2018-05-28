@@ -1,0 +1,29 @@
+#version 420
+
+// we're inputting 3 vertices in the patch
+// and just outputting the 3 unmodified
+layout(vertices = 3) out;
+
+in vec2 TexCoord[];
+
+out vec2 texCoord[];
+
+uniform float time;
+
+void main()
+{
+	gl_out[ gl_InvocationID ].gl_Position = gl_in[ gl_InvocationID ].gl_Position;
+	texCoord[ gl_InvocationID ] = TexCoord[ gl_InvocationID ];
+	
+	float foo = sin(time);
+	foo = 1;
+
+	// only needs to be set once for the whole patch
+	if (gl_InvocationID == 0) 
+	{
+		gl_TessLevelInner[0] = 64 * abs(foo);
+		gl_TessLevelOuter[0] = 64 * abs(foo);
+		gl_TessLevelOuter[1] = 64 * abs(foo);
+		gl_TessLevelOuter[2] = 64 * abs(foo);
+	}
+}
