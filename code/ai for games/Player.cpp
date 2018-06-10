@@ -3,6 +3,8 @@
 #include "GLFW/glfw3.h"
 #include "vec2.h"
 
+using namespace AI_GAMES;
+
 Input * Player::input = nullptr;
 
 Player::Player()

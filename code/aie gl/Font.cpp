@@ -37,7 +37,7 @@ bool Font::LoadFont(const char *filename)
 	fname = fname.substr(0, fname.length() - 4);
 	fname += "_0.png";
 
-	m_texture = new Texture(fname.c_str());
+	m_texture = new AIE_GL::Texture(fname.c_str());
 
 
 	while( !file.eof() )
@@ -186,7 +186,7 @@ const Font::CharInfo *Font::GetCharInfo( unsigned char character)
 	return &m_characters[ character ];
 }
 
-Texture *Font::GetFontBitmap()
+AIE_GL::Texture *Font::GetFontBitmap()
 {
 	return m_texture;
 }

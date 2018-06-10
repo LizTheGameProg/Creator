@@ -3,13 +3,16 @@
 
 class Input;
 
-class Player : public IEntity
+namespace DESIGN_PATTERNS
 {
-public:
-	Player();
-	virtual ~Player();
+	class Player : public IEntity
+	{
+	public:
+		Player();
+		virtual ~Player();
 
-	virtual void Update(float deltaTime);
+		virtual void Update(float deltaTime);
 
-	static Input * input;
-};
+		static Input * input;
+	};
+}

@@ -9,6 +9,8 @@
 
 #include "glm\ext.hpp"
 
+using namespace INTRO_OPENGL;
+
 Transform2D::Transform2D(	glm::vec2 a_translation	/* = glm::vec2(0)*/, 
 							glm::float32 a_rotation	/* = glm::float32(0.f)*/, 
 							glm::vec2 a_scale		/* = glm::vec2(1)*/)

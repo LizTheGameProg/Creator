@@ -1,17 +1,20 @@
 #pragma once
 
-class Shader
+namespace ANGINE
 {
-public:
-	 Shader(const char * vertexSource, const char * fragmentSource);
-	 ~Shader();
-	
-	 unsigned int getID() { return id; }
+	class Shader
+	{
+	public:
+		Shader(const char * vertexSource, const char * fragmentSource);
+		~Shader();
 
-	 static unsigned int getBasicShaderID();
-private:
-	 Shader();
+		unsigned int getID() { return id; }
 
-	unsigned int id;
-	static unsigned int basicShaderID;
-};
+		static unsigned int getBasicShaderID();
+	private:
+		Shader();
+
+		unsigned int id;
+		static unsigned int basicShaderID;
+	};
+}

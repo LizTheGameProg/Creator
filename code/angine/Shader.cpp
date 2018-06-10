@@ -1,6 +1,8 @@
 #include "Shader.h"
 #include "openGLBindings.h"
 
+using namespace ANGINE;
+
 unsigned int Shader::basicShaderID = 0;
 
 const char * vsSource = "#version 410\n\nlayout(location=0) in vec4 Position;\nlayout(location=1) in vec2 TexCoord;\n\nout vec2 vTexCoord;\n\nuniform mat4 ProjectionView;\nuniform mat4 model;\n\nvoid main() {\nvTexCoord = TexCoord;\n	gl_Position = ProjectionView * model * Position;\n}";

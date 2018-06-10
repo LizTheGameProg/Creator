@@ -32,11 +32,12 @@
 #ifndef SPRITEBATCH_H
 #define SPRITEBATCH_H
 
-namespace AIE_GL
+namespace openGL
 {
 	class Application;
+	class Texture;
 }
-class Texture;
+
 class RenderTexture;
 class Font;
 
@@ -52,7 +53,7 @@ public:
 	class Factory
 	{
 	public:
-		static SpriteBatch * Create(AIE_GL::Application *pApp, ERenderMode mode);
+		static SpriteBatch * Create(openGL::Application *pApp, ERenderMode mode);
 		static void Destroy(SpriteBatch *pSpriteBatch);
 	};
 
@@ -61,15 +62,15 @@ public:
 	virtual void End()									= 0;
 
 	// draw a texture at the specified position, size, origin
-	virtual void DrawSprite( Texture *texture, float xPos, float yPos, float width = 0.0f, float height = 0.0f, float rotation = 0.0f, float xOrigin = 0.5f, float yOrigin = 0.5f) = 0;
+	virtual void DrawSprite(openGL::Texture *texture, float xPos, float yPos, float width = 0.0f, float height = 0.0f, float rotation = 0.0f, float xOrigin = 0.5f, float yOrigin = 0.5f) = 0;
 
 	// draw a texture that is transformed by a matrix (a pointer to the beginning of 9 floats)
 	// the width and height are scailed by the matrix.
-	virtual void DrawSpriteTransformed3x3(Texture *texture, float *transformMat3x3, float width = 0.0f, float height = 0.0f, float xOrigin = 0.5f, float yOrigin = 0.5f)=0;
+	virtual void DrawSpriteTransformed3x3(openGL::Texture *texture, float *transformMat3x3, float width = 0.0f, float height = 0.0f, float xOrigin = 0.5f, float yOrigin = 0.5f)=0;
 	
 	// draw a texture that is transformed by a matrix (a pointer to the beginning of 16 floats)
 	// the width and height are scailed by the matrix.
-	virtual void DrawSpriteTransformed4x4(Texture *texture, float *transformMat4x4, float width = 0.0f, float height = 0.0f, float xOrigin = 0.5f, float yOrigin = 0.5f)=0;
+	virtual void DrawSpriteTransformed4x4(openGL::Texture *texture, float *transformMat4x4, float width = 0.0f, float height = 0.0f, float xOrigin = 0.5f, float yOrigin = 0.5f)=0;
 
 	// draw a string of text.
 	// new line character '\n' is supported.
@@ -93,7 +94,7 @@ public:
 protected:
 
 	// spritebatch protected, so that it can only be constructed through the "Factory" class
-	SpriteBatch(AIE_GL::Application *pApp);
+	SpriteBatch(openGL::Application *pApp);
 	virtual ~SpriteBatch();
 
 	// represents red, green, blue, alpha in the range of 0 - 255
@@ -112,10 +113,10 @@ protected:
 
 	// if the texture specified is invalid, this 1px white texture
 	// will be used instead
-	Texture *m_nullTexture;
+	AIE_GL::Texture *m_nullTexture;
 
 	// needed to accuretly setup 2D rendering orthographic
-	AIE_GL::Application *m_pApplication;
+	openGL::Application *m_pApplication;
 
 	
 

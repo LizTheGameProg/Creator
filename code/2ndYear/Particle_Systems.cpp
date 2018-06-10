@@ -99,17 +99,17 @@ void Particle_Systems::onDestroy()
 	Gizmos::destroy();
 }
 
-// main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	AIE_2ND_YEAR::Application* app = new Particle_Systems();
-	
-	if (app->create("AIE - Particle Systems",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-
-	return 0;
-}
+//// main that controls the creation/destruction of an application
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	AIE_2ND_YEAR::Application* app = new Particle_Systems();
+//	
+//	if (app->create("AIE - Particle Systems",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//
+//	return 0;
+//}

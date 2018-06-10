@@ -207,20 +207,20 @@ void Tutorial2::onDestroy()
 	Gizmos::destroy();
 }
 
-// main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	AIE_2ND_YEAR::Application* app = new Tutorial2();
-	
-	if (app->create("AIE - Tutorial2",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-
-	return 0;
-}
+//// main that controls the creation/destruction of an application
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	AIE_2ND_YEAR::Application* app = new Tutorial2();
+//	
+//	if (app->create("AIE - Tutorial2",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//
+//	return 0;
+//}
 
 // function to create a grid
 void Tutorial2::GenerateGrid( unsigned int rows, unsigned int cols )

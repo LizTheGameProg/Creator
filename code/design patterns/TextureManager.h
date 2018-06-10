@@ -18,10 +18,10 @@ public:
 	void LoadTexture(std::string fileName);
 
 	// This uses the path and file name ("./Images/background.png")
-	Texture* GetTexture(std::string fileName);
+	openGL::Texture* GetTexture(std::string fileName);
 
 protected:
 	static TextureManager * m_instance;
 
-	std::map<std::string, Texture*> m_textureMap;
+	std::map<std::string, openGL::Texture*> m_textureMap;
 };

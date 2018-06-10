@@ -3,6 +3,9 @@
 #include "InputHandler.h"
 #include "BaseWindow.h"
 #include <iostream>
+
+using ANGINE::InputHandler;
+
 Camera2D::Camera2D()
 {
 	glm::vec2 halfWindowDimensions = BaseWindow::Get()->GetWindowSize() / 2.f;

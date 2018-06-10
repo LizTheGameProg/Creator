@@ -8,7 +8,7 @@ namespace LML
 {
 	Tree::Tree()
 	{
-		texture = new Texture("./Images/topdowntanks/Environment/treeLarge.png");
+		texture = new openGL::Texture("./Images/topdowntanks/Environment/treeLarge.png");
 		//collider = new CircleCollider(transform, texture->GetWidth()/2.f);
 
 		transform.setTranslation(LML::vec2(float(rand() % 1280), float(rand() & 720)));

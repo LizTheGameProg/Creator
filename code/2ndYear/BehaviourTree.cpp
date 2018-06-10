@@ -176,16 +176,16 @@ void BehaviourTree::onDestroy()
 }
 
 // main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	AIE_2ND_YEAR::Application* app = new BehaviourTree();
-	
-	if (app->create("AIE - BehaviourTree",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-
-	return 0;
-}
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	AIE_2ND_YEAR::Application* app = new BehaviourTree();
+//	
+//	if (app->create("AIE - BehaviourTree",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//
+//	return 0;
+//}

@@ -6,9 +6,13 @@
 // Updated Date:	19/08/2015
 //--------------------------------
 
+namespace openGL
+{
+	class Texture;
+}
+
 class Quad;
 class Shader;
-class Texture;
 
 #include "Transform2D.h"
 
@@ -31,5 +35,5 @@ public:
 	Quad *		quad;
 	Shader *	defaultShader;
 	Transform2D transform;
-	Texture *	texture;
+	openGL::Texture *	texture;
 };

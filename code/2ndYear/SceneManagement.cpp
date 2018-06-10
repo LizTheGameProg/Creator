@@ -107,20 +107,20 @@ void SceneManagement::onDestroy()
 	Gizmos::destroy();
 }
 
-// main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	AIE_2ND_YEAR::Application* app = new SceneManagement();
-	
-	if (app->create("AIE - SceneManagement",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-
-	return 0;
-}
+//// main that controls the creation/destruction of an application
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	AIE_2ND_YEAR::Application* app = new SceneManagement();
+//	
+//	if (app->create("AIE - SceneManagement",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//
+//	return 0;
+//}
 
 int SceneManagement::planeSphereTest(const glm::vec4 & a_plane, 
 									 const glm::vec3 & a_centre, 

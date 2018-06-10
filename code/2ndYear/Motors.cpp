@@ -43,8 +43,8 @@
 
 #define DEFAULT_SCREENWIDTH 1280
 #define DEFAULT_SCREENHEIGHT 720
-
-bool GLFWMouseButton1Down = false;
+//
+//bool GLFWMouseButton1Down = false;
 
 
 MotorTutorial::MotorTutorial()

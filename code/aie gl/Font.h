@@ -32,7 +32,10 @@ delete font;
 #include <map>
 #include <vector>
 
-class Texture;
+namespace AIE_GL
+{
+	class Texture;
+}
 
 class Font
 {
@@ -56,7 +59,7 @@ public:
 	Font(const char *filename);
 	~Font();
 
-	Texture *GetFontBitmap();
+	AIE_GL::Texture *GetFontBitmap();
 
 	float GetLineHeight();
 
@@ -86,7 +89,7 @@ private:
 	// contains kerning information m_kerning[firstCharacter][secondCharacter] = kerningAmount
 	std::map< unsigned char, std::map< unsigned char, char > > m_kerning;
 
-	Texture *m_texture;
+	AIE_GL::Texture *m_texture;
 
 public:
 protected:

@@ -3,6 +3,8 @@
 #include "GLFW/glfw3.h"
 #include "vec2.h"
 
+using namespace DESIGN_PATTERNS;
+
 Input * Player::input = nullptr;
 
 Player::Player()

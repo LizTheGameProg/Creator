@@ -7,7 +7,7 @@ TextureManager* TextureManager::m_instance = nullptr;
 
 TextureManager::TextureManager()
 {
-	m_textureMap = std::map<std::string, Texture*>();
+	m_textureMap = std::map<std::string, openGL::Texture*>();
 }
 
 TextureManager::~TextureManager()
@@ -46,10 +46,10 @@ void TextureManager::LoadTexture(std::string a_fileName)
 	if(m_textureMap[a_fileName])
 		std::cout << "A texture has already been loaded from";
 #endif
-	m_textureMap[a_fileName] = new Texture(a_fileName.c_str());
+	m_textureMap[a_fileName] = new openGL::Texture(a_fileName.c_str());
 }
 
-Texture* TextureManager::GetTexture(std::string a_fileName)
+openGL::Texture* TextureManager::GetTexture(std::string a_fileName)
 {
 	return m_textureMap[a_fileName];
 }

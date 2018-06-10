@@ -1,5 +1,5 @@
 #include "vec2.h"
-#include "common.h"
+#include "common (2).h"
 
 namespace LML
 {
@@ -88,7 +88,7 @@ namespace LML
 
 	float vec2::magnitude()
 	{
-		return LML::sqrt(x * x + y * y);
+		return sqrt(x * x + y * y);
 	}
 
 	float vec2::length()

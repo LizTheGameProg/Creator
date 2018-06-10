@@ -3,6 +3,8 @@
 #include "glm\vec3.hpp"
 #include "glm\ext.hpp"
 
+using namespace ANGINE;
+
 Quad::Quad()
 {
 	programID = 0;

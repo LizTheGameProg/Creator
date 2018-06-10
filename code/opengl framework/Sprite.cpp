@@ -21,7 +21,7 @@ Sprite::Sprite()
 
 	transform.SetTranslation(glm::vec2(0.f, 0.f));
 
-	texture = new Texture("./textures/awesomeface.png");
+	texture = new openGL::Texture("./textures/awesomeface.png");
 }
 
 Sprite::~Sprite()

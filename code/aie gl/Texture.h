@@ -23,50 +23,52 @@ Usage:
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
-class Texture
+namespace AIE_GL
 {
-public:
+	class Texture
+	{
+	public:
 
-	// overloaded constructor
-	// loads a texture given the filename...
-	// program will crash if texture was unable to be found.
-	Texture(const char *filename);
+		// overloaded constructor
+		// loads a texture given the filename...
+		// program will crash if texture was unable to be found.
+		Texture(const char *filename);
 
-	// overloaded constructor
-	// loads a texture given the filename...
-	// program will crash if texture was unable to be found.
-	Texture(unsigned int width, unsigned int height, unsigned int *pixels = 0);
+		// overloaded constructor
+		// loads a texture given the filename...
+		// program will crash if texture was unable to be found.
+		Texture(unsigned int width, unsigned int height, unsigned int *pixels = 0);
 
-	// destructor
-	// frees the texture from video memory
-	virtual ~Texture();
+		// destructor
+		// frees the texture from video memory
+		virtual ~Texture();
 
-	unsigned int GetWidth()			const;
-	unsigned int GetHeight()		const;
+		unsigned int GetWidth()			const;
+		unsigned int GetHeight()		const;
 
-	// returns the texture handle genorated by openGL during load
-	// glGenTextures...
-	unsigned int GetTextureHandle()	const;
-protected:
+		// returns the texture handle genorated by openGL during load
+		// glGenTextures...
+		unsigned int GetTextureHandle()	const;
+	protected:
 
-	unsigned int	m_width;
-	unsigned int	m_height;
-	unsigned int	m_glTextureHandle;
+		unsigned int	m_width;
+		unsigned int	m_height;
+		unsigned int	m_glTextureHandle;
 
-private:
+	private:
 
 
 
-	// Load PNG images only
-	// Returns an OpenGL texture ID
-	// out_width and out_height are pointers, the function will return the textures width and height
-	// through these paramaters if not NULL
-	static unsigned int LoadTexture(const char *filename, unsigned int *out_width = nullptr, unsigned int *out_height = nullptr);
+		// Load PNG images only
+		// Returns an OpenGL texture ID
+		// out_width and out_height are pointers, the function will return the textures width and height
+		// through these paramaters if not NULL
+		static unsigned int LoadTexture(const char *filename, unsigned int *out_width = nullptr, unsigned int *out_height = nullptr);
 
-	// unloads the texture from graphics memory
-	// expects a valid openGL texture ID, as returned from the LoadTexture function
-	static void DeleteTexture(unsigned int textureID);
+		// unloads the texture from graphics memory
+		// expects a valid openGL texture ID, as returned from the LoadTexture function
+		static void DeleteTexture(unsigned int textureID);
 
-};
-
+	};
+}
 #endif

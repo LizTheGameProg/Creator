@@ -3,11 +3,13 @@
 #include "vec2.h"
 #include "Input.h"
 #include "GLFW\glfw3.h"
-#include "common.h"
+#include "common (2).h"
 #include "SpriteBatch.h"
 #include "RigidBody.h"
 //#include "Bullet.h"
 //#include "CircleCollider.h"
+
+using namespace LML;
 
 Player::Player()
 {

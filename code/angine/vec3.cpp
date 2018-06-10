@@ -1,7 +1,7 @@
 #include "vec3.h"
-#include "common.h"
+#include "common (2).h"
 
-namespace LML
+namespace ANGINE
 {
 	const vec3 vec3::Up = vec3::vec3(0.f, 1.f, 0.f);
 	const vec3 vec3::Right = vec3::vec3(1.f, 0.f, 0.f);

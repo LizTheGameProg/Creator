@@ -1,16 +1,19 @@
 #pragma once
 #include "GameObject.h"
 
-class Player : public LML::GameObject
+namespace LML
 {
-public:
-	Player();
-	virtual ~Player();
+	class Player : public GameObject
+	{
+	public:
+		Player();
+		virtual ~Player();
 
-	virtual void Update(float deltaTime);
-	virtual void Render();
+		virtual void Update(float deltaTime);
+		virtual void Render();
 
-protected:
-	//Texture * turret;
-	//LML::transform2D barrelTransform;
-};
+	protected:
+		//Texture * turret;
+		//LML::transform2D barrelTransform;
+	};
+}

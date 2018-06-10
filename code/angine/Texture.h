@@ -7,22 +7,25 @@
 
 using std::string;
 
-class Texture
+namespace ANGINE
 {
-public:
-	Texture(char * filePathName);
-	Texture(string * filePathName);
-	~Texture();
-	unsigned int getID() { return textureID; }
+	class Texture
+	{
+	public:
+		Texture(char * filePathName);
+		Texture(string * filePathName);
+		~Texture();
+		unsigned int getID() { return textureID; }
 
-private:
-	Texture();
-	unsigned int textureID;
+	private:
+		Texture();
+		unsigned int textureID;
 
-public:
-	int width;
-	int height;
+	public:
+		int width;
+		int height;
 
-private:
-	int format;
-};
+	private:
+		int format;
+	};
+}

@@ -2,7 +2,12 @@
 
 #include "transform2D.h"
 #include "SpriteBatch.h"
-class Texture;
+
+namespace openGL
+{
+	class Texture;
+}
+
 class SpriteBatch;
 class BaseCollider;
 class RigidBody;
@@ -24,7 +29,7 @@ namespace LML
 		void SetParent(GameObject * parent);
 		LML::mat3 GetGlobalTransform();
 
-		Texture * texture;
+		openGL::Texture * texture;
 		LML::transform2D transform;
 
 	protected:

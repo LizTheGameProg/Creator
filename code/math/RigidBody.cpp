@@ -1,6 +1,8 @@
 #include "RigidBody.h"
-#include "common.h"
+#include "common (2).h"
 #include <iostream>
+
+
 
 RigidBody::RigidBody() : velocity(LML::vec2()), acceleration(LML::vec2()), mass(5.f), friction(1.1f), angularVelocity(0.f), angularAcceleration(0.f), drag(1.1f)
 {

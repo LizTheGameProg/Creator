@@ -1,6 +1,8 @@
 #include "Window_GLFW.h"
 #include "InputHandler.h"
 
+using ANGINE::InputHandler;
+
 Window_GLFW::Window_GLFW(WindowInfo & a_windowInfo)
 {
 	if(glfwInit() == GL_FALSE)

@@ -1,7 +1,10 @@
 #pragma once
 #include "BaseScene.h"
 
-class Texture;
+namespace openGL
+{
+	class Texture;
+}
 
 namespace LML
 {
@@ -14,6 +17,6 @@ namespace LML
 		virtual void Update(float deltaTime);
 		virtual void Render();
 
-		Texture * backgroundTexture;
+		openGL::Texture * backgroundTexture;
 	};
 }

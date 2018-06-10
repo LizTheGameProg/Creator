@@ -1,6 +1,6 @@
 #include "mat3.h"
 
-namespace LML
+namespace ANGINE
 {
 	mat3::mat3()
 	{

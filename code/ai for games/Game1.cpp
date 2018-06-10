@@ -8,11 +8,14 @@
 #include "vec2.h"
 #include <time.h>
 #include <iostream>
+
+SpriteBatch * ::IEntity::m_spriteBatch = nullptr;
+
 namespace AI_GAMES
 {
-	SpriteBatch * IEntity::m_spriteBatch = nullptr;
 
-	Game1::Game1(unsigned int windowWidth, unsigned int windowHeight, bool fullscreen, const char *title) //: Application(windowWidth, windowHeight, fullscreen, title)
+	Game1::Game1(unsigned int windowWidth, unsigned int windowHeight, bool fullscreen, const char *title) 
+		: AIE_GL::Application(windowWidth, windowHeight, fullscreen, title)
 	{
 		m_spritebatch = SpriteBatch::Factory::Create(this, SpriteBatch::GL3);
 		IEntity::m_spriteBatch = m_spritebatch;

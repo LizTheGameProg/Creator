@@ -17,7 +17,7 @@ public:
 	}
 
 	static SpriteBatch * m_spriteBatch;
-	Texture * m_texture;
+	openGL::Texture * m_texture;
 	//Transform2D m_transform;
 };
 

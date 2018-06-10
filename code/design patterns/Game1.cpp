@@ -9,10 +9,10 @@
 #include "vec2.h"
 
 SpriteBatch * IEntity::m_spriteBatch = nullptr;
-namespace DESGIN_PATTERNS
+namespace DESIGN_PATTERNS
 {
 	Game1::Game1(unsigned int windowWidth, unsigned int windowHeight, bool fullscreen, const char *title)
-		: AIE_GL::Application(windowWidth, windowHeight, fullscreen, title)
+		: ::AIE_GL::Application(windowWidth, windowHeight, fullscreen, title)
 	{
 		m_spritebatch = SpriteBatch::Factory::Create(this, SpriteBatch::GL3);
 

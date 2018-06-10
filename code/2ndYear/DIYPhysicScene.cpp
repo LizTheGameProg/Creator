@@ -73,19 +73,19 @@ void DIYPhysicScene::onDestroy()
 	m_scene = nullptr;
 }
 
-// main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	AIE_2ND_YEAR::Application* app = new DIYPhysicScene();
-	
-	if (app->create("AIE - DIYPhysicScene",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-
-	_CrtDumpMemoryLeaks();
-
-	return 0;
-}
+//// main that controls the creation/destruction of an application
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	AIE_2ND_YEAR::Application* app = new DIYPhysicScene();
+//	
+//	if (app->create("AIE - DIYPhysicScene",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//
+//	_CrtDumpMemoryLeaks();
+//
+//	return 0;
+//}

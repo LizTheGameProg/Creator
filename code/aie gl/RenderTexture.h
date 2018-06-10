@@ -3,7 +3,7 @@
 
 #include "Texture.h"
 
-class RenderTexture : public Texture
+class RenderTexture : public AIE_GL::Texture
 {
 public:
 

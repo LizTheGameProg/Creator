@@ -1,4 +1,5 @@
 #include "Particles.h"
+#include "Particles.h"
 #include <string.h>
 #include <iostream>
 #include <vector>
@@ -14,7 +15,7 @@
 //#include "PxShape.h"
 //#include "PxBatchQueryDesc.h"
 
-bool GLFWMouseButton1Down = false;
+//bool GLFWMouseButton1Down = false;
 
 //ParticleTutorial::ParticleTutorial(PhysXVariables * a_physX_Variables) : BaseScene(a_physX_Variables)
 //{

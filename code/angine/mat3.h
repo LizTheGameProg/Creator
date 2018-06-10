@@ -1,7 +1,7 @@
 #pragma once
 #include "vec3.h"
 
-namespace LML
+namespace ANGINE
 {
 	class mat3
 	{

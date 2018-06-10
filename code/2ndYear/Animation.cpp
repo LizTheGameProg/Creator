@@ -119,19 +119,19 @@ void Animation::onDestroy()
 }
 
 // main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	Application* app = new Animation();
-	
-	if (app->create("AIE - Animation",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-
-	return 0;
-}
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	Application* app = new Animation();
+//	
+//	if (app->create("AIE - Animation",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//
+//	return 0;
+//}
 
 void Animation::InitFBXSceneResource(FBXFile * a_pScene)
 {

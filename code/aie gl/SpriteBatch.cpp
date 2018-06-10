@@ -26,7 +26,7 @@ SpriteBatch::SpriteBatch(AIE_GL::Application *pApp)
 	SetRenderColor(255,255,255,255);
 	SetUVRect(0.0f, 0.0f, 1.0f, 1.0f);
 	unsigned int pixels[1] = {0xFFFFFFFF};
-	m_nullTexture = new Texture(1,1, pixels);
+	m_nullTexture = new AIE_GL::Texture(1,1, pixels);
 	m_transformColumnMajor = false;
 }
 SpriteBatch::~SpriteBatch()

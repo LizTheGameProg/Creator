@@ -12,7 +12,7 @@ namespace LML
 	{
 		sceneRoot->transform.translateBy(LML::vec2(616, 439));
 
-		backgroundTexture = new Texture("./Images/Racing Pack/PNG/Tiles/Dirt Road/road_dirt21.png");
+		backgroundTexture = new openGL::Texture("./Images/Racing Pack/PNG/Tiles/Dirt Road/road_dirt21.png");
 
 		float width = backgroundTexture->GetDimensions().x;
 		float height = backgroundTexture->GetDimensions().y;

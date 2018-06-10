@@ -127,19 +127,19 @@ void BRDF::onDestroy()
 }
 
 // main that controls the creation/destruction of an application
-int main(int argc, char* argv[])
-{
-	// explicitly control the creation of our application
-	Application* app = new BRDF();
-	
-	if (app->create("AIE - BRDF",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
-		app->run();
-		
-	// explicitly control the destruction of our application
-	delete app;
-	_CrtDumpMemoryLeaks();
-	return 0;
-}
+//int main(int argc, char* argv[])
+//{
+//	// explicitly control the creation of our application
+//	Application* app = new BRDF();
+//	
+//	if (app->create("AIE - BRDF",DEFAULT_SCREENWIDTH,DEFAULT_SCREENHEIGHT,argc,argv) == true)
+//		app->run();
+//		
+//	// explicitly control the destruction of our application
+//	delete app;
+//	_CrtDumpMemoryLeaks();
+//	return 0;
+//}
 
 void BRDF::InitFBXSceneResource(FBXFile *a_pScene)
 {

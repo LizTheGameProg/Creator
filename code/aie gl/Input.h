@@ -36,6 +36,8 @@
 #include <vector>
 #include <map>
 
+#include "Application.h"
+
 class Input
 {
 public:
@@ -68,7 +70,7 @@ public:
 	};
 
 	// just giving the Application class access to the Input singleton!
-	friend class Application;
+	friend class AIE_GL::Application;
 
 
 protected:
